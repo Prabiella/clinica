@@ -155,19 +155,25 @@
 
 
 
-						<div class="col-md-6 bodyPart">
+						<div class="col-md-6 bodyPart mb-4">
 							<p>Indica la parte del cuerpo donde tienes dolor</p>
 							
-							<select class="form-select" id="lista" required>
-								
-								<option value="Cabeza_cuellos">Cabeza/cuello</option>
+							
+
+							<select class="form-select" id="lista" required onchange="mostrarImagen()">
+								<option selected disabled value="">Selecciona parte del cuerpo</option>
+								<option value="Cabeza_cuello">Cabeza/cuello</option>
 								<option value="Tronco">Tronco</option>
-								<option value="Miembrossuperiores">Miembros Superiores</option>
-								<option value="Miembros inferiores">Miembros Inferiores</option>
-							  </select>
+								<option value="Rodillas">Rodillas</option>
+								<option value="Miembros_superiores">Miembros Superiores</option>
+								<option value="Miembros_inferiores">Miembros Inferiores</option>
+							</select>
 
-
-							</label>
+							<!-- Aquí el canvas -->
+							<div id="canvasContainer">
+								<p>Encierra en un circulo la parte dónde tienes dolor</p>
+								<canvas id="canvas"></canvas>
+							</div>
 						</div>
 
 

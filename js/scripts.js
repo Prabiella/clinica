@@ -55,3 +55,33 @@ function togglePasswordVisibility() {
 
 
 
+/* Canva */
+
+function mostrarImagen() {
+  var lista = document.getElementById("lista");
+  var canvas = document.getElementById("canvas");
+  var context = canvas.getContext("2d");
+
+  // Rutas de las imágenes según la opción seleccionada
+  var imagenes = {
+      Cabeza_cuello: "/img/canva/cabeza_cuello.svg",
+      Tronco: "/img/canva/tronco.svg",
+      Rodillas: "/img/canva/rodillas.svg",
+      Miembros_superiores: "/img/canva/miembros_superiores.svg",
+      Miembros_inferiores: "/img/canva/miembros_inferiores.svg",
+  };
+
+  // Limpia el canvas
+  context.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Carga la imagen seleccionada en el canvas
+  var imagenSeleccionada = new Image();
+  imagenSeleccionada.src = imagenes[lista.value];
+
+  imagenSeleccionada.onload = function () {
+      context.drawImage(imagenSeleccionada, 0, 0, canvas.width, canvas.height);
+  };
+
+
+  
+}

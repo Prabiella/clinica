@@ -256,6 +256,27 @@ border-radius: 5px 0 0 5px;
     display: none;
 }
 
+/* Estilos del selct canvas */
+#canvasContainer {
+    position: relative;
+}
+
+#canvasContainer p {
+    font-size: .8rem;
+    margin-top: 15px;
+}
+
+
+#canvas {
+    border: 1px solid #ccc;
+    cursor: crosshair;
+    width: 100%;
+    max-height: 100px;
+    background-color: #F3F6F9;
+    border-radius: 5px;
+}
+
+
 
   /* media queries */
   @media only screen and (max-width:767px) { 
