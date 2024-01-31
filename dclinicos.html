@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datos Clínicos</title>
+    <meta name="description" content="Clinica">
+    <meta name="author" content="Clinica">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	
+	
+	<link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container-fluid heightform backform">
+	<div class="row">
+		<div class="col-md-12 pt-2 mainmenu">
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+				<div class="container-fluid">
+				  <a class="navbar-brand" href="#">
+					<img alt="laboratorio Médico Polanco" src="img/main_logo.png">
+				   </a>
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							 CDMX y Área Metropolitana
+							</a>
+							<ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="#">Monterrey</a></li>
+							  <li><a class="dropdown-item" href="#">Guadalajara</a></li>
+							  <li><a class="dropdown-item" href="#">Queretaro</a></li>
+							</ul>
+						  </li>
+						<li class="nav-item d-none d-md-block">
+							<img src="img/sections/phone.svg" alt="Teléfono">
+						</li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">55 50 80 1910</a>
+					  </li>
+					
+					 
+					</ul>
+				  </div>
+				</div>
+			  </nav>
+		</div>
+	</div>
+	
+
+	<div class="row ">
+		<div class="col-md-8 mx-auto mt-5">
+			<div class="d-flex justify-content-end">
+				<span class="badge rounded-pill text-bg-primary mb-4 stepforms">
+					<p>Paso 3 de 4</p>
+				</span>
+			</div>
+			<div class="row">
+				<div class="col-md-4 d-flex flex-row flex-md-column justify-content-center align-items-center mainimgform">
+					<h5 class="mt-md-5">Datos clínicos</h5>
+					<img alt="datos personales" src="img/sections/dclinicos.svg" class="d-flex justify-content-end" alt="Datos clinicos" >
+					<p class="d-none d-md-block">Vamos a crear tu expediente <br> Ayúdanos con tus datos personales</p>
+				</div>
+
+
+				
+				  
+				
+				<div class="col-md-8 bodyform">
+					
+					<form class="row">
+
+						  <div class="col-md-6 mb-4 ">
+							<label for="number" class="form-label">Fecha de nacimiento</label>
+
+							<div class="input-group date" id="datepicker">
+								<input type="text" class="form-control" id="date"/>
+								<span class="input-group-append">
+								  <span class="input-group-text bg-light d-block">
+									<i class="fa fa-calendar"></i>
+								  </span>
+								</span>
+							  </div>
+							
+							</div>
+
+					
+						
+						<div class="col-md-6 mb-4">
+							<label for="name" class="form-label">Correo electrónico</label>
+							<input type="text" class="form-control input" required>
+							<div  class="feedback d-none"></div>
+						  </div>
+  
+
+						  <div class="col-md-6 mb-4">
+							<label for="name" class="form-label">Es alérgico a</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="optuno">
+								<label class="form-check-label" for="optuno">
+								Medicamentos
+								</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="optdos">
+								<label class="form-check-label" for="optdos">
+								 Alimentos
+								</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="optres">
+								<label class="form-check-label" for="optres">
+								 Animales
+								</label>
+							  </div>
+						  </div>
+						  
+
+						<div class="col-md-6">
+							<label for="name" class="form-label">Ha padecido alguna enfermedad o intervención 
+								quirúrgica de relevancia</label>
+
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="okSwitch" onchange="cambiarTexto()">
+									<label class="form-check-label" for="okSwitch">No</label>
+								</div>
+						</div>
+
+
+
+						  <div class="row mb-4">
+							<div class="col-6 d-flex justify-content-start">
+								<button class="btn btn-primary sendForm" type="submit" onclick="validarFormulario()">Atrás</button>
+							</div>
+							<div class="col-6 d-flex justify-content-end">
+								<button class="btn btn-primary sendForm" type="submit" onclick="validarFormulario()">Siguiente</button>
+							</div>
+						</div>
+					  </form>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	</div>
+
+	<div class="row footerlegal">
+		<div class="col-md-12">
+			<p>
+				Responsable sanitario: Jaime Fragoso Flores Céd. 8673373, Patología Clínica. Universidad Popular Autónoma del Estado de Puebla Laboratorios Ruiz 2021. Todos los derechos reservados.
+Permiso COFEPRIS número 223300201A17775.
+Aviso de privacidad
+			</p>
+		</div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js'></script><script  src="./script.js"></script>
+<script src="js/scripts.js"></script>
+
+
+
+<script>
+	$(function(){
+  $('#datepicker').datepicker();
+});
+</script>
+  </body>
+</html>

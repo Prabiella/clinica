@@ -1,0 +1,248 @@
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+html, body{
+    min-height: 100%;
+    height: 100%;
+}
+
+.height{
+    min-height: 100%;
+    height: 100%;
+
+}
+
+.heightform{
+    min-height: 100%;
+    height: 100%;
+}
+
+/* Incian estilos del login*/
+
+/* Bloque Izq */
+
+.ClinPol{
+    background: rgb(239,72,182);
+background: linear-gradient(322deg, rgba(239,72,182,1) 0%, rgba(31,83,216,1) 84%);
+}
+.ClinPol img{
+    max-width: 300px;
+    margin-top: 5%;
+}
+
+.ClinPol p{
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    max-width: 60%;
+
+}
+
+
+/* Bloque Der */
+
+.ClinPolLogin{
+    background-color: #fff;
+}
+
+.ClinPolLogin h3{
+    font-family: "Open Sans", sans-serif;
+ }
+
+
+.ClinPolLogin p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    margin: 3% 5% 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ClinPolLogin p a{
+   color: #1F53D8;
+   text-decoration: none;
+}
+
+.ClinPolLogin input{
+    border: 1px solid #DCDBDD;
+    border-radius: 8px;
+    height: 50px;
+ }
+
+ /* abrir cerrar ojo password */
+
+ .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+
+  /* estilos menu */
+.mainmenu{
+    padding: 0.5rem 0px 0px 0px;
+    background: rgb(239,72,182);
+    background: linear-gradient(322deg, rgba(239,72,182,1) 0%, rgba(31,83,216,1) 84%);
+}
+
+.bg-body-tertiary{
+    background-color: #25336C!important;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-body-tertiary .container-fluid{
+    padding-left: 0;
+}
+
+.navbar-brand{
+    background-color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+}
+
+.navbar-nav .dropdown-menu a{
+    color:#25336C;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+/* estilos forms */
+
+.backform{
+    background-color: #F3F6F9;
+}
+
+.bodyform{
+    background-color: #FFFFFF;
+    padding: 5%;
+    -webkit-box-shadow: 0px 0px 13px -9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 13px -9px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 13px -9px rgba(66, 68, 90, 1);
+border-radius: 5px;
+}
+
+
+.mainimgform{
+    background: rgb(31,83,216);
+background: linear-gradient(160deg, rgba(31,83,216,1) 0%, rgba(239,72,182,1) 100%);
+border-radius: 5px 0 0 5px;
+}
+
+.mainimgform img{
+    margin: 5% 0;
+}
+
+.mainimgform h5,p{
+    color: #fff;
+    margin-right: 5%;
+}
+
+
+.stepforms{
+    background-color: #FDFDFD!important;
+    -webkit-box-shadow: inset 0px 0px 12px -6px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 0px 0px 12px -6px rgba(66, 68, 90, 1);
+    box-shadow: inset 0px 0px 12px -6px rgba(66, 68, 90, 1);
+}
+
+.stepforms p{
+    color: #000000;
+    font-size: 0.8rem;
+    margin: 0px;
+    padding: 5px;
+    font-weight: 500;
+
+}
+
+
+
+.sendForm{
+    background-color: #EF48B6;
+    border: 1px solid #EF48B6;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #1f53d8;
+    border: 1px solid #1f53d8;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+.footerlegal p{
+    font-weight: 200;
+   color: #fff;
+   padding: 1%;
+   font-size: 0.8rem;
+   text-align: center;
+}
+.footerlegal{
+    background-color: #25336C;
+    margin: 0;
+   
+}
+
+
+  /* media queries */
+  @media only screen and (max-width:767px) { 
+	
+    
+    .height{
+        min-height: 80%;
+        height: 80%;
+    
+    }
+
+    .heightform{
+        height: auto;
+        min-height: auto;
+        
+    }
+
+    .ClinPolLogin .legal{
+       position: absolute;
+      bottom: 5px;
+      text-align: center;
+
+
+    }
+
+    .bg-body-tertiary{
+        background-color: #ffffff!important;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .navbar-nav .nav-item .nav-link{
+        color: #25336C;
+        background-color: #F3F6F9;
+        padding-left: 5%;
+    }
+    
+
+    .mainimgform img{
+       width: 50px;
+    }
+
+
+
+    
+}
