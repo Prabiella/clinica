@@ -200,6 +200,63 @@ border-radius: 5px 0 0 5px;
 }
 
 
+/* genero */
+
+.SelecGen{
+    border: 1px solid #E7ECED;
+    width: 150px;
+    height: 120px;
+    background-color: #dcdcdc;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+
+.SelecGen img{
+    width:30px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+   
+    
+}
+
+.SelecGen p{
+   text-align: center;
+   color: #000000;
+   font-weight: 100;
+    
+}
+
+
+.gender p{
+    color: #000000;
+}
+
+.bodyPart p{
+    color: #000000;
+    font-size: 0.9rem;
+}
+
+
+/* Estilo específico para los elementos seleccionados */
+.input-hidden:checked + label .SelecGen {
+    background-color: #1F53D8; /* Cambia según tus necesidades */
+}
+
+
+.input-hidden:checked + label .SelecGen p {
+    color: #dcdcdc;
+    font-weight: 300;
+}
+
+
+.input-hidden {
+    display: none;
+}
+
+
   /* media queries */
   @media only screen and (max-width:767px) { 
 	

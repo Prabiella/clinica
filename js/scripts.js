@@ -52,3 +52,6 @@ function togglePasswordVisibility() {
     // Cambia el texto del label basado en el estado del switch
     label.textContent = miSwitch.checked ? "Sí" : "No";
 }
+
+
+
