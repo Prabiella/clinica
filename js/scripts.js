@@ -46,10 +46,7 @@ function togglePasswordVisibility() {
 
   /* Script para el switch */
   function cambiarTexto() {
-    // Obtiene el elemento de switch
     var miSwitch = document.getElementById("okSwitch");
-
-    // Obtiene el elemento del label
     var label = document.querySelector('label[for="okSwitch"]');
 
     // Cambia el texto del label basado en el estado del switch
