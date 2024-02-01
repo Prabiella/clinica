@@ -256,10 +256,8 @@ border-radius: 5px 0 0 5px;
     display: none;
 }
 
-/* Estilos del selct canvas */
-#canvasContainer {
-    position: relative;
-}
+/* Estilos del select canvas */
+
 
 #canvasContainer p {
     font-size: .8rem;
@@ -270,13 +268,77 @@ border-radius: 5px 0 0 5px;
 #canvas {
     border: 1px solid #ccc;
     cursor: crosshair;
-    width: 100%;
-    max-height: 100px;
     background-color: #F3F6F9;
-    border-radius: 5px;
+    
 }
 
 
+/* Estilos para switch */
+.switch-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Etiquetas "Sí" y "No" */
+  .label-yes,
+  .label-no {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
 
   /* media queries */
   @media only screen and (max-width:767px) { 

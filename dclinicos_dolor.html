@@ -76,78 +76,28 @@
 				<div class="col-md-8 bodyform">
 					
 					<form class="row">
-
-					
-
-						<div class="col-md-6 mb-4">
-							<label for="name" class="form-label">Es alérgico a</label>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="optuno">
-								<label class="form-check-label" for="optuno">
-								Medicamentos
-								</label>
-							  </div>
-							  <div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="optdos">
-								<label class="form-check-label" for="optdos">
-								 Alimentos
-								</label>
-							  </div>
-							  <div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" id="optres">
-								<label class="form-check-label" for="optres">
-								 Animales
-								</label>
-							  </div>
-						  </div>
-				
-
-							<div class="col-md-6 mb-4 ">
-								<label for="number" class="form-label">Fecha de nacimiento</label>
-								<div class="input-group date" >
-									<input type="date" class="form-control"/>
-									<span class="input-group-append"></span>
-									</span>
-								  </div>	
-							</div>
-
-
-							<div class="col-md-6">
-								<p class="text-black">Género</p>
-								<input type="radio" name="gender" class="input-hidden" id="masculino" />
-								<label for="masculino">
-									<div class="SelecGen" onclick="seleccionarGenero(this)">
-										<img src="img/genero/masc_act.svg" alt="Masculino">
-										<p>Masculino</p>
-									</div>
-								</label>
-							
-								<input type="radio" name="gender" class="input-hidden" id="femenino" />
-								<label for="femenino">
-									<div class="SelecGen" onclick="seleccionarGenero(this)">
-										<img src="img/genero/fem_act.svg" alt="Femenino">
-										<p>Femenino</p>
-									</div>
-								</label>
-							</div>
-
-
-
-							<div class="col-md-6 mb-4">
-								<p class="text-black">Ha padecido alguna enfermedad o intervención 
-									quirúrgica de relevancia</p>
 	
-									<div class="switch-container">
-										<label class="switch">
-										  <input type="checkbox" id="okSwitch" onchange="cambiarTexto()" >
-										  <span class="slider round"></span>
-										</label>
-										<span class="label-yes" for="okSwitch">No</span>
-									  </div>
-							</div>
-						
-						
+							<div class="col-md-12">
+								<p class="text-black">Indica la parte del cuerpo donde tienes dolor</p>
+								
+								<select class="form-select" id="lista" required onchange="mostrarImagen()">
+									<option selected disabled value="">Selecciona parte del cuerpo</option>
+									<option value="Cabeza_cuello">Cabeza/cuello</option>
+									<option value="Tronco">Tronco</option>
+									<option value="Rodillas">Rodillas</option>
+									<option value="Miembros_superiores">Miembros Superiores</option>
+									<option value="Miembros_inferiores">Miembros Inferiores</option>
+								</select>
 							
+	
+								<!-- Aquí el canvas -->
+								<div id="canvasContainer">
+									<p class="text-black">Encierra en un circulo la parte dónde tienes dolor</p>
+									<canvas id="canvas" ></canvas>
+								</div>
+	
+								
+							</div>
 
 
 							
