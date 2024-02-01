@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Datos clínicos dolor</title>
+    <title>Datos legales</title>
     <meta name="description" content="Clinica">
     <meta name="author" content="Clinica">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	
-	
-	
-	
-	<link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -59,13 +55,13 @@
 		<div class="col-md-8 mx-auto mt-5">
 			<div class="d-flex justify-content-end">
 				<span class="badge rounded-pill text-bg-primary mb-4 stepforms">
-					<p>Paso 3 de 4</p>
+					<p>Paso 4 de 4</p>
 				</span>
 			</div>
 			<div class="row">
 				<div class="col-md-4 d-flex flex-row flex-md-column justify-content-center align-items-center mainimgform">
-					<h5 class="mt-md-5">Datos clínicos</h5>
-					<img alt="datos personales" src="img/sections/dclinicos.svg" class="d-flex justify-content-end ">
+					<h5 class="mt-md-5">Datos legales</h5>
+					<img alt="datos personales" src="img/sections/dlegales.svg" class="d-flex justify-content-end ">
 					<p class="d-none d-md-block">Vamos a crear tu expediente <br> Ayúdanos con tus datos personales</p>
 				</div>
 
@@ -74,46 +70,71 @@
 				  
 				
 				<div class="col-md-8 bodyform">
-					<p class="text-black">Indica la parte del cuerpo donde tienes dolor</p>
+					
 					<form class="row">
 
+						<div class="col-md-6 mb-4">
+						  <label for="number" class="form-label">Ingresa tu número de seguro*</label>
+						  <input type="number" class="form-control input"  required>
+						  <div  class="feedback d-none"></div>
+						</div>
 
-
-
-
-
-
-
-
-	
-							<div class="col-md-6">
-								
-								<select class="form-select" id="lista" required onchange="mostrarImagen()">
-									<option selected disabled value="">Selecciona parte del cuerpo</option>
-									<option value="Cabeza_cuello">Cabeza/cuello</option>
-									<option value="Tronco">Tronco</option>
-									<option value="Rodillas">Rodillas</option>
-									<option value="Miembros_superiores">Miembros Superiores</option>
-									<option value="Miembros_inferiores">Miembros Inferiores</option>
-								</select>
-							
-	
-								<!-- Aquí el canvas -->
-								<div id="canvasContainer">
-									<p class="text-black">Encierra en un circulo la parte dónde tienes dolor</p>
-									<canvas id="canvas" ></canvas>
-								</div>
 						
-							</div>
-
-
+						<div class="col-md-6 mb-4">
+							<label for="name" class="form-label">Nombre</label>
+							<input type="text" class="form-control input"  required>
+							<div  class="feedback d-none"></div>
+						  </div>
   
 
-						  <div class="row mb-4 mt-5">
-							<div class="col-6 d-flex justify-content-start">
-								<button class="btn btn-primary sendForm" type="submit" onclick="beforepage();">Atrás</button>
-							</div>
-							<div class="col-6 d-flex justify-content-end">
+					
+
+						<div class="col-md-6 mb-4">
+						  <label for="lista" class="form-label">Ciudad</label>
+						  <select class="form-select" id="lista" required>
+							<option selected disabled value="">Selecciona un estado</option>
+							<option value="Aguascalientes">Aguascalientes</option>
+							<option value="Baja California">Baja California</option>
+							<option value="Baja California Sur">Baja California Sur</option>
+							<option value="Campeche">Campeche</option>
+							<option value="Chiapas">Chiapas</option>
+							<option value="Chihuahua">Chihuahua</option>
+							<option value="Coahuila">Coahuila</option>
+							<option value="Colima">Colima</option>
+							<option value="Durango">Durango</option>
+							<option value="Estado de México">Estado de México</option>
+							<option value="Guanajuato">Guanajuato</option>
+							<option value="Guerrero">Guerrero</option>
+							<option value="Hidalgo">Hidalgo</option>
+							<option value="Jalisco">Jalisco</option>
+							<option value="Michoacán">Michoacán</option>
+							<option value="Morelos">Morelos</option>
+							<option value="Nayarit">Nayarit</option>
+							<option value="Nuevo León">Nuevo León</option>
+							<option value="Oaxaca">Oaxaca</option>
+							<option value="Puebla">Puebla</option>
+							<option value="Querétaro">Querétaro</option>
+							<option value="Quintana Roo">Quintana Roo</option>
+							<option value="San Luis Potosí">San Luis Potosí</option>
+							<option value="Sinaloa">Sinaloa</option>
+							<option value="Sonora">Sonora</option>
+							<option value="Tabasco">Tabasco</option>
+							<option value="Tamaulipas">Tamaulipas</option>
+							<option value="Tlaxcala">Tlaxcala</option>
+							<option value="Veracruz">Veracruz</option>
+							<option value="Yucatán">Yucatán</option>
+							<option value="Zacatecas">Zacatecas</option>
+						  </select>
+
+						  <div class="feedback d-none">
+							Please select a valid state.
+						  </div>
+						</div>
+
+						
+						<div class="row mb-4">
+							
+							<div class="col-6 offset-6 d-flex justify-content-end">
 								<button class="btn btn-primary sendForm" type="submit" onclick="validarFormulario(); nextpage();">Siguiente</button>
 							</div>
 						</div>
@@ -143,25 +164,11 @@ Aviso de privacidad
 <script>
     function nextpage() {
         // Especifica la URL a la que deseas redirigir
-        var nextpage = "dclinicos.html";
+        var nextpage = "dcontacto.html";
 
         // Cambia la ubicación de la página a la nueva URL
         window.location.href = nextpage;
     }
-
-
-
-	function beforepage() {
-        // Especifica la URL a la que deseas redirigir
-        var beforepage = "dpersonales.html";
-
-        // Cambia la ubicación de la página a la nueva URL
-        window.location.href = beforepage;
-    }
 </script>
-
-
-
-
   </body>
 </html>
